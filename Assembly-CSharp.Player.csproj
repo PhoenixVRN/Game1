@@ -56,9 +56,14 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\PlayrMuov.cs" />
     <Compile Include="Assets\Script\PlayerCont2.cs" />
+    <Compile Include="Assets\Script\TowerGun.cs" />
     <Compile Include="Assets\Script\CameraMouve.cs" />
+    <Compile Include="Assets\Script\Enemy.cs" />
+    <Compile Include="Assets\Script\Bullet2.cs" />
+    <Compile Include="Assets\Script\Fire.cs" />
+    <Compile Include="Assets\Script\EnemyEye.cs" />
+    <Compile Include="Assets\Script\EnemyRotation.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -655,6 +660,9 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.7f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.InternalAPIEngineBridge.001.csproj">
@@ -672,10 +680,6 @@
     <ProjectReference Include="Unity.TextMeshPro.csproj">
       <Project>{7897785B-111A-A64E-68E9-5C8F83871DD6}</Project>
       <Name>Unity.TextMeshPro</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{0AEDBEC4-C105-FD42-6701-B1CCFFE0024C}</Project>
-      <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.csproj">
       <Project>{5BE62ECE-3A92-E0FD-CA86-C6150EFD5E86}</Project>

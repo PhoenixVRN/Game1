@@ -7,13 +7,23 @@ public class Fire : MonoBehaviour
     public Transform firePoint;
     public GameObject bullet;
 
+    private float timeShot;
+    public float startTime;
+
     void FixedUpdate()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (timeShot <= 0)
         {
-            Shoot();
+            if (Input.GetButtonDown("Fire1"))
+            {
+                Shoot();
+                timeShot = startTime;
+            }
         }
-       
+        else
+        {
+            timeShot -= Time.deltaTime;
+        }
     }
     void Shoot()
     {
