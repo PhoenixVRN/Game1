@@ -3846,6 +3846,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_Turel
       objectReference: {fileID: 0}
+    - target: {fileID: 7856928159563476740, guid: 6f0b4b98de450684eba12456cbaafe44, type: 3}
+      propertyPath: distanceVisual
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8906345130605869722, guid: 6f0b4b98de450684eba12456cbaafe44, type: 3}
       propertyPath: m_RootOrder
       value: 1
