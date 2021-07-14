@@ -9,6 +9,11 @@ public class Enemy : MonoBehaviour
     public LayerMask layerMask;
     public GameObject Eay;
 
+    public GameObject ammo;
+    public Transform shotDir;
+    private float timeShot;
+    public float startTime;
+
     public float speedRotation = 30;
     public float distanceVisual;
     private Transform _player;
@@ -45,6 +50,16 @@ public class Enemy : MonoBehaviour
             }
 //        }
     
+    }
+
+    void Update()
+    {
+        if (timeShot <= 0)
+        {
+                Instantiate(ammo, shotDir.position, transform.rotation);
+                timeShot = startTime;
+        }
+        timeShot -= Time.deltaTime;
     }
 
     public void TakeDamage (int damage)

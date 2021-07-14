@@ -119,8 +119,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: 0
-  ammo: {fileID: 0}
+  ammo: {fileID: 2371601748653639309, guid: f73753d2d0aa33648878da0e7df0cd64, type: 3}
   shotDir: {fileID: 0}
+  speedRotation: 30
   startTime: 0
 --- !u!1 &2812601248203055001
 GameObject:
